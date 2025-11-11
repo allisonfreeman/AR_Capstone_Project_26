@@ -128,7 +128,7 @@ namespace HoloLens2ObjectDetection
                 {
                     runtimeModel = ModelLoader.Load(modelAsset);
                     worker = WorkerFactory.CreateWorker(WorkerFactory.Type.ComputePrecompiled, runtimeModel);
-                    Debug.Log($"Model loaded successfully: {runtimeModel.name}");
+                    Debug.Log($"Model loaded successfully: {modelAsset.name}");
                     Debug.Log($"Model inputs: {string.Join(", ", runtimeModel.inputs)}");
                     Debug.Log($"Model outputs: {string.Join(", ", runtimeModel.outputs)}");
                 }
