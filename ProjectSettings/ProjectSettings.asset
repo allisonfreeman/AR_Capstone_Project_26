@@ -888,7 +888,8 @@ PlayerSettings:
       InternetClient: True
       WebCam: True
       Microphone: True
-  metroTargetDeviceFamilies: {}
+  metroTargetDeviceFamilies:
+    Desktop: False
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 
