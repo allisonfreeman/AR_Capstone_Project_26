@@ -22,13 +22,22 @@ public class SpawnAnchorFromSelection : MonoBehaviour
 
         var result = await anchorManager.TryAddAnchorAsync(hitPose);
 
-        bool success = result.TryGetResult(out var anchor);
+    //    bool success = result.TryGetResult(out var anchor);
 
-        if(success)
-        {
-            GameObject spawnedPrefab = Instantiate(prefab, anchor.pose.position, anchor.pose.rotation);
-            spawnedPrefab.transform.parent = anchor.transform;
-        }
+      //  if(success)
+      //  {
+      //      GameObject spawnedPrefab = Instantiate(prefab, anchor.pose.position, anchor.pose.rotation);
+      //      spawnedPrefab.transform.parent = anchor.transform;
+      //  }
+
+if (result.status.IsSuccess())
+            {
+                var anchor = result.value;
+
+                // 4. Instantiate and parent the prefab
+                GameObject spawnedPrefab = Instantiate(prefab, anchor.pose.position, anchor.pose.rotation);
+                spawnedPrefab.transform.SetParent(anchor.transform, true);
 
     }
+}
 }
