@@ -75,7 +75,7 @@ public class SessionPanelManager : MonoBehaviour
         if (screenRenderer != null && newMat != null)
         {
             screenRenderer.material = newMat;
-            Debug.Log("Screen material updated to: " + newMat.name);
+            
         }
     }
 
@@ -96,12 +96,35 @@ public class SessionPanelManager : MonoBehaviour
         if (videoPlayer.isPlaying)
         {
             videoPlayer.Pause();
-            Debug.Log("Video Paused");
+            
         }
         else
         {
             videoPlayer.Play();
-            Debug.Log("Video Playing");
+            
         }
-}
+    }
+    public void RewindTenSeconds()
+    {
+        if (videoPlayer == null) return;
+
+        // Calculate new time, ensuring it doesn't go below 0
+        float newTime = (float)videoPlayer.time - 10f;
+        videoPlayer.time = Mathf.Max(newTime, 0f);
+        
+        
+    }
+
+    public void FastForwardTenSeconds()
+    {
+        if (videoPlayer == null) return;
+
+        // Calculate new time, ensuring it doesn't exceed video length
+        float newTime = (float)videoPlayer.time + 10f;
+        float videoLength = (float)videoPlayer.length;
+        
+        videoPlayer.time = Mathf.Min(newTime, videoLength);
+        
+        
+    }
 }
