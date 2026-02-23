@@ -670,15 +670,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1011521807071173904, guid: 90f955d6c9d709448a0b1e29e1f9c046, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1180895169275043612, guid: 90f955d6c9d709448a0b1e29e1f9c046, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1360334431692699758, guid: 90f955d6c9d709448a0b1e29e1f9c046, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1948193615953854874, guid: 90f955d6c9d709448a0b1e29e1f9c046, type: 3}
       propertyPath: m_Name
@@ -734,11 +734,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2105872328799679035, guid: 90f955d6c9d709448a0b1e29e1f9c046, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2940030942784507886, guid: 90f955d6c9d709448a0b1e29e1f9c046, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3419360757097544916, guid: 90f955d6c9d709448a0b1e29e1f9c046, type: 3}
       propertyPath: dependentInteractor
@@ -834,11 +834,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad5b753b73e311143a85055b15cea562, type: 3}
---- !u!1 &1396353621 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2349340688478777887, guid: 2e5b90c191b94004182e55a48f0ca427, type: 3}
-  m_PrefabInstance: {fileID: 1991879486}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1464575919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1279,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_AnchorPrefab: {fileID: 1396353621}
+  m_AnchorPrefab: {fileID: 0}
 --- !u!114 &1704539709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,7 +1535,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1812989476}
   - component: {fileID: 1812989478}
-  - component: {fileID: 1812989477}
   m_Layer: 0
   m_Name: Camera Offset
   m_TagString: Untagged
@@ -1569,18 +1563,6 @@ Transform:
   - {fileID: 207178203}
   m_Father: {fileID: 1704539713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1812989477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812989475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4d642881628ba842b14068a50038965, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1812989478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1608,7 +1590,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8956709818017596, guid: 2e5b90c191b94004182e55a48f0ca427, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 445577537456690332, guid: 2e5b90c191b94004182e55a48f0ca427, type: 3}
       propertyPath: m_RootOrder
@@ -1660,15 +1642,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 956236789226392091, guid: 2e5b90c191b94004182e55a48f0ca427, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1136804142009052521, guid: 2e5b90c191b94004182e55a48f0ca427, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1382596376187832343, guid: 2e5b90c191b94004182e55a48f0ca427, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626065999944968659, guid: 2e5b90c191b94004182e55a48f0ca427, type: 3}
       propertyPath: dependentInteractor
@@ -1676,7 +1658,7 @@ PrefabInstance:
       objectReference: {fileID: 1540238846}
     - target: {fileID: 3885281831086529257, guid: 2e5b90c191b94004182e55a48f0ca427, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7973689603850891315, guid: 2e5b90c191b94004182e55a48f0ca427, type: 3}
       propertyPath: interactionManager
